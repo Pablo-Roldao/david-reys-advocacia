@@ -1,0 +1,16 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php74-script .php
+suPHP_ConfigPath /home/davidreysadvocac2/
+##### LOCAWEB - NAO REMOVER #####
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+<filesmatch ".(htm|html|css|js)$"="">
+AddDefaultCharset UTF-8

@@ -1,0 +1,24 @@
+.bg-action {
+    background: url(../../img/contact-mobile.png), no-repeat center center;
+    background-size: cover;
+    width: 85vw;
+    height: 85vw;
+}
+
+.bg-action-desktop {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .bg-action {
+        display: none;
+    }
+
+    .bg-action-desktop {
+        display: block;
+        background: url(../../img/carousel-3.png), no-repeat center center;
+        background-size: cover;
+        width: 80vw;
+        height: 500px;
+    }
+}

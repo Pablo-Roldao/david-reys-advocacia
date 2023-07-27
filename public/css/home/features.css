@@ -1,0 +1,14 @@
+:root {
+    --bg-number: #19197B;
+    --color-number: #FFF;
+}
+
+.feature__number {
+    color: var(--color-number);
+}
+
+.feature-btn-number {
+    background: var(--bg-number);
+    padding: 5%;
+    border-radius: 50px;
+}

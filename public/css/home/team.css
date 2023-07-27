@@ -1,0 +1,11 @@
+.bg-team {
+    height: 50vw;
+    width: 100%;
+    padding: 1rem !important;
+}
+
+@media (min-width: 768px) {
+    .bg-team {
+        height: 15vw;
+    }
+}
