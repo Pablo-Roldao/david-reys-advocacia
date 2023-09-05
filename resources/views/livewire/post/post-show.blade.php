@@ -16,9 +16,8 @@
         {{-- Content --}}
         <x-slot name='content'>
             @if($post->getCoverPath() !== null)
-                <div class="">
-                    <img src="{{asset('storage/' . $post->getCoverPath())}}" alt="Capa do post" class="h-56 w-full object-cover"/>
-                </div>
+                <img src="{{asset('storage/' . $post->getCoverPath())}}" alt="Capa do post"
+                     class="h-56 w-full object-cover rounded-lg"/>
             @endif
             <div class="whitespace-pre-wrap text-justify">
                 {{$post->getContent()}}

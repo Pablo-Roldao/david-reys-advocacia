@@ -35,6 +35,13 @@
                         <x-input-error for="post.author"/>
                     </div>
                     <div class="mb-4">
+                        <x-label for="cover" value="Nova capa"/>
+                        <input label="Nova capa" placeholder="Nova capa"
+                               wire:model="cover" name="cover" id="cover"
+                               class="w-full" type="file" accept="image/jpeg, image/png, image/jpg" />
+                        <x-input-error for="cover"/>
+                    </div>
+                    <div class="mb-4">
                         <x-label for="content" value="Conteúdo"/>
                         <textarea label="Conteúdo" placeholder="Conteúdo"
                                  wire:model="post.content" name="content" id="content"
