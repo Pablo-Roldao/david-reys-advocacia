@@ -1,4 +1,4 @@
-<x-layout>
+<x-guest-layout>
     <x-navbar about={{true}} services={{true}} team={{false}} articles={{true}} links={{true}} offices={{true}} contact={{true}}></x-navbar>
 
 
@@ -282,5 +282,5 @@
             </div>
         </div>
     </article>
-</x-layout>
+</x-guest-layout>
 

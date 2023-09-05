@@ -1,6 +1,9 @@
-<x-layout>
-
-    <x-navbar about={{0}} services={{true}} team={{true}} articles={{true}} links={{true}} offices={{true}} contact={{true}}></x-navbar>
+@php
+    $about = \App\Repositories\EloquentAboutRepository::get();
+@endphp
+<x-guest-layout>
+    <x-navbar
+        about={{0}} services={{true}} team={{true}} articles={{true}} links={{true}} offices={{true}} contact={{true}}></x-navbar>
 
     <!-- Page Header Start -->
     <div class="container-fluid bg-page-header bg-page-header-about" style="margin-bottom: 90px;">
@@ -25,27 +28,11 @@
                     <img class="img-fluid rounded" src="../../img/about.png" alt="">
                 </div>
                 <div class="col-lg-7 mt-4 mt-lg-0">
-                    <h1 class="mb-4 about-services">Oferecemos serviços jurídicos confiáveis e eficazes</h1>
-                    <p>O Escritório David Reys Advocacia possui mais de 15 anos de atuação nas mais diversas áreas
-                        jurídicas, abrangendo também vários estados do Brasil.
-                        <br>
-                        Nossas estruturas estão situadas não somente em Maceió/AL como também em Garanhus/PE, União dos
-                        Palmares/AL e Porto Calvo/AL.
-                        <br>
-                        Nossa equipe de profissionais é excepcionalmente qualificada e altamente empenhada em trazer a
-                        melhor experiência no atendimento e satisfação total aos seus clientes.
-                        <br>
-                        Reiteramos a proposta visceral pelo compromisso da prestação de serviço ético e completamente
-                        eficiente, integrado com as mais sofisticadas ferramentas de estruturação e execução dos
-                        serviços jurídicos disponíveis, seja de forma contenciosa ou até mesmo na consultoria
-                        preventiva.
-                        <br>
-                        Nosso proposito maior é oferecer a melhor experiência de assistência jurídica no mais alto
-                        padrão de qualidade e excelência possível.
-                        <br>
-                    </p>
+                    <h1 class="mb-4 about-services">{{$about->getTitle()}}</h1>
+                    <p class="text-justify" style="text-indent: 1rem">{{$about->getContent()}}</p>
                 </div>
             </div>
         </div>
     </article>
-</x-layout>
+
+</x-guest-layout>

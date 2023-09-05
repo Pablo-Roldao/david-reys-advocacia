@@ -1,4 +1,4 @@
-<x-layout>
+<x-guest-layout>
 
     <x-navbar about={{ true }} services={{ true }} team={{ true }}
         articles={{ true }} links={{ true }} offices={{ false }} contact={{ true }}>
@@ -33,9 +33,9 @@
                     <p style="color: black!important">Endereço: <a href="https://goo.gl/maps/hvrzXTFNZnktyhUGA" style="color: black!important">R. Quinze de Novembro, 316 - São José, Garanhuns - PE, 55295-230.</a></p>
                 </div>
                 <div class="col-lg-7 mt-4 mt-lg-0">
-                    
+
                 </div>
             </div>
         </div>
     </article>
-</x-layout>
+</x-guest-layout>

@@ -23,34 +23,36 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/admin-sobre', \App\Http\Livewire\About\AboutIndex::class)->name('admin.about');
+    Route::get('/admin-area-de-atuacao', \App\Http\Livewire\ExpertiseArea\ExpertiseAreaIndex::class)->name('admin.expertise-area');
+    Route::get('/admin-contato', \App\Http\Livewire\Contact\ContactIndex::class)->name('admin.contact');
+    Route::get('/admin-posts', \App\Http\Livewire\Post\PostIndex::class)->name('admin.posts');
+
 });
 
 Route::get('/', function () {
     return view('home.index');
-});
+})->name('home');
 
 Route::get('/sobre', function () {
     return view('about.index');
-});
-
-Route::get('/contato', function () {
-    return view('contact.index');
-});
+})->name('about');
 
 Route::get('/time', function () {
     return view('team.index');
-});
+})->name('team');
 
 Route::get('/escritorios', function () {
     return view('offices.index');
-});
+})->name('offices');
 
-Route::get('/artigos', [ArticlesController::class, 'indexPublic']);
+Route::get('/contato', function () {
+    return view('contact.index');
+})->name('contact');
 
-Route::get('/links-uteis', [LinksController::class, 'indexPublic']);
+Route::get('/posts', function () {
+    return view('posts.index');
+})->name('posts');
 
-Route::resource('/articles', ArticlesController::class)
-    ->except(['show']);
 
-Route::resource('/links', LinksController::class)
-    ->except(['show']);

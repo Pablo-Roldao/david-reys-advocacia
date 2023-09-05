@@ -1,13 +1,13 @@
+@php
+    $expertiseArea = \App\Repositories\EloquentExpertiseAreaRepository::get();
+ @endphp
+
 <article id="services" class="container px-3 py-5">
 
     <div class="row px-3">
         <div class="col-lg-3">
             <h1 class="mb-1">Nossa área de atuação</h1>
-            <p class="mb-0">Temos o prazer de oferecer serviços jurídicos especializados para atender às
-                diversas
-                necessidades dos nossos clientes.
-                Com uma equipe experiente de advogados dedicados, estamos comprometidos em fornecer
-                orientação legal sólida e estratégica em uma variedade de áreas do direito.</p>
+            <p class="mb-0 text-left">{{$expertiseArea->getContent()}}</p>
         </div>
 
         <div class="col-lg-9 pt-5 pt-lg-0">

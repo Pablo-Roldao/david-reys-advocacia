@@ -1,13 +1,38 @@
-<x-layout title="Início">
-    <x-app-layout>
-        <div class="container">
-            <h1 class="text-center text-uppercase m-5 display-4">Painel administrativo</h1>
-            <a href="{{ route('articles.index') }}">
-                <button class="btn col-12 my-4">Artigos</button>
-            </a>
-            <a href="{{ route('links.index') }}">
-                <button class="btn col-12 my-4">Links</button>
-            </a>
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="mx-auto sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-4 gap-4">
+                <a href="{{route('admin.about')}}">
+                    <x-button-link>
+                        Sobre
+                    </x-button-link>
+                </a>
+
+                <a href="{{route('admin.expertise-area')}}">
+                    <x-button-link>
+                        Área de atuação
+                    </x-button-link>
+                </a>
+
+                <a href="{{route('admin.contact')}}">
+                    <x-button-link>
+                        Contato
+                    </x-button-link>
+                </a>
+
+                <a href="{{route('admin.posts')}}">
+                    <x-button-link>
+                        Posts
+                    </x-button-link>
+                </a>
+            </div>
         </div>
-    </x-app-layout>
-</x-layout>
+    </div>
+</x-app-layout>

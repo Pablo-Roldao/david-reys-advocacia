@@ -6,7 +6,7 @@
         <div class="col-12 p-4">
             <div class="bg-team rounded"></div>
             <div class="owl-carousel team-carousel position-relative" style="margin-top: -97px; padding: 0 30px;">
-                <a href="views/pages/team.php#david-reys" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#david-reys" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Dr. David Reys</h5>
                         <p class="mb-3 px-4">Advogado</p>
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#daniel" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#daniel" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Dr. Daniel</h5>
                         <p class="mb-3 px-4">Advogado</p>
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#jessica-feitosa" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#jessica-feitosa" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Dra. Jéssica Feitosa </h5>
                         <p class="mb-3 px-4">Advogada</p>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#ana-nogueira" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#ana-nogueira" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Dra. Ana Nogueira</h5>
                         <p class="mb-3 px-4">Advogada</p>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#erika" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#erika" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Dra. Erika</h5>
                         <p class="mb-3 px-4">Advogada</p>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#willane-reino" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#willane-reino" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Dra. Willane Reino</h5>
                         <p class="mb-3 px-4">Advogada</p>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#rossana-bion" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#rossana-bion" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Dra. Rossana Bion</h5>
                         <p class="mb-3 px-4">Advogada</p>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#jhassyara-leao" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#jhassyara-leao" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Jhassyara Leão ...</h5>
                         <p class="mb-3 px-4">Supervisora</p>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#gilvaldo-filho" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#gilvaldo-filho" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Givaldo Filho</h5>
                         <p class="mb-3 px-4">Assistente Jurídico</p>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#renata-schozen" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#renata-schozen" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Renata Souza</h5>
                         <p class="mb-3 px-4">Assistente Jurídica</p>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#jackelline-cunha" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#jackelline-cunha" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Jackelline Cunha</h5>
                         <p class="mb-3 px-4">Recursos Humanos</p>
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#eduarda-souza" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#eduarda-souza" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Eduarda Souza</h5>
                         <p class="mb-3 px-4">Estagiária de Direito</p>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#renata-ferreira" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#renata-ferreira" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Renata Ferreira</h5>
                         <p class="mb-3 px-4">Assistente Administrativa</p>
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#renata-ferreira" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#renata-ferreira" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Poliana</h5>
                         <p class="mb-3 px-4">Assistente Administrativa</p>
@@ -148,7 +148,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#sarah-gomes" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#sarah-gomes" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Sarah Gomes</h5>
                         <p class="mb-3 px-4">Assistente Administrativa</p>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#roseli-nascimento" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#roseli-nascimento" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Roseli Nascimento</h5>
                         <p class="mb-3 px-4">Assistente Administrativa</p>
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#elian-crislaine" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#elian-crislaine" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Elian Crislaine</h5>
                         <p class="mb-3 px-4">Assistente Administrativa</p>
@@ -179,7 +179,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="views/pages/team.php#florisvaldo-sampaio" class="text-decoration-none text-dark">
+                <a href="{{route('team')}}#florisvaldo-sampaio" class="text-decoration-none text-dark">
                     <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
                         <h5 class="mb-2 px-4">Florisvaldo Sampaio</h5>
                         <p class="mb-3 px-4">Motorista</p>
