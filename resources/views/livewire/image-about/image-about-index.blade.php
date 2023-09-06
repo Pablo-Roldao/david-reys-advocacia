@@ -5,7 +5,7 @@
         <livewire:image-about.image-about-edit :imageAbout="$imageAbout" :wire:key="'edit-image-about-'.$imageAbout->getId()"/>
     </div>
     <img src="{{asset('storage/' . $imageAbout->getPhotoPath())}}" alt="Foto da imagem do sobre"
-         class="rounded-lg"/>
+         class="rounded-lg mx-auto"/>
 </div>
 
 <script>

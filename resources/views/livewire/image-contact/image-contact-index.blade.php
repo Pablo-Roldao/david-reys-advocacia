@@ -5,5 +5,5 @@
         <livewire:image-contact.image-contact-edit :imageContact="$imageContact" :wire:key="'edit-image-contact-'.$imageContact->getId()"/>
     </div>
     <img src="{{asset('storage/' . $imageContact->getPhotoPath())}}" alt="Foto do membro do time"
-         class="rounded-lg"/>
+         class="rounded-lg mx-auto"/>
 </div>
