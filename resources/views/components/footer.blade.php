@@ -40,7 +40,7 @@
                 @foreach($phones as $phone)
                     @if($phone->getIsWhatsapp())
                         <a class="text-white mb-2 flex gap-1" href="https://wa.me/{{preg_replace('/[^A-Za-z0-9]/', '', $phone->getNumber())}}">
-                            <img src="./img/whatsapp-logo.png" width="20px">
+                            <img src="./img/whatsapp-logo.png" width="20px" class="h-10">
                             {{$phone->getNumber()}} -
                             {{$phone->getName()}}
                         </a>

@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             ContactSeeder::class,
             PhoneSeeder::class,
             PostSeeder::class,
+            TeamMemberSeeder::class,
         ]);
     }
 }

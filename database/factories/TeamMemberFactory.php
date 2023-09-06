@@ -16,8 +16,12 @@ class TeamMemberFactory extends Factory
      */
     public function definition()
     {
+        $reflectionPositionEnum = new \ReflectionClass(\App\Enum\PositionEnum::class);
+        $positions = $reflectionPositionEnum->getConstants();
         return [
-            //
+            'name' => $this->faker->name(),
+            'position' => $this->faker->randomElement($positions),
+            'description' => $this->faker->realText()
         ];
     }
 }

@@ -32,6 +32,11 @@
                         Posts
                     </x-button-link>
                 </a>
+                <a href="{{route('admin.team')}}">
+                    <x-button-link>
+                        Time
+                    </x-button-link>
+                </a>
             </div>
         </div>
     </div>

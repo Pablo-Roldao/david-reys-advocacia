@@ -28,6 +28,7 @@ Route::middleware([
     Route::get('/admin-area-de-atuacao', \App\Http\Livewire\ExpertiseArea\ExpertiseAreaIndex::class)->name('admin.expertise-area');
     Route::get('/admin-contato', \App\Http\Livewire\Contact\ContactIndex::class)->name('admin.contact');
     Route::get('/admin-posts', \App\Http\Livewire\Post\PostIndex::class)->name('admin.posts');
+    Route::get('/admin-time', \App\Http\Livewire\TeamMember\TeamMemberIndex::class)->name('admin.team');
 
 });
 
