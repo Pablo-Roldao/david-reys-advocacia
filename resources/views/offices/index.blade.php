@@ -1,3 +1,6 @@
+@php
+    $offices = \App\Repositories\EloquentOfficeRepository::getAll();
+@endphp
 <x-guest-layout>
 
     <x-navbar about={{ true }} services={{ true }} team={{ true }}
@@ -22,19 +25,18 @@
     <article id="about" class="container-fluid py-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded" src="../../img/offices/garanhuns.png" alt="">
-                    <h1>Garanhus - PE</h1>
-                    <p style="color: black!important" >
-                        Telefone: <a href="tel:+558737630694" style="color: black!important">87
-                            3763-0694 - Telefone e
-                            WhatsApp Garanhuns-PE</a>
+                @foreach($offices as $office)
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded" src="{{asset('storage/'.$office->getPhotoPath())}}" alt="">
+                        <h1>{{$office->getName()}}</h1>
+                        <p style="color: black!important">
+                            <strong>Telefone:</strong> <a href="tel:+55{{preg_replace("/[^0-9]/", "", $office->getPhone())}}" style="color: black!important">
+                            {{$office->getPhone()}}</a>
                         </p>
-                    <p style="color: black!important">Endereço: <a href="https://goo.gl/maps/hvrzXTFNZnktyhUGA" style="color: black!important">R. Quinze de Novembro, 316 - São José, Garanhuns - PE, 55295-230.</a></p>
-                </div>
-                <div class="col-lg-7 mt-4 mt-lg-0">
-
-                </div>
+                        <p style="color: black!important"><strong>Endereço:</strong> <a href="{{$office->getMapLink()}}"
+                                                                       style="color: black!important">{{$office->getAddress()}}</a></p>
+                    </div>
+                @endforeach
             </div>
         </div>
     </article>

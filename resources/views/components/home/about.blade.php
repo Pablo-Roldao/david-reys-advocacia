@@ -9,7 +9,7 @@
             </div>
             <div class="col-lg-7 mt-4 mt-lg-0">
                 <h1 class="mb-2 about-services">{{$about->getHomeTitle()}}</h1>
-                <p class="text-justify" style="text-indent: 1rem">{{$about->getHomeContent()}}</p>
+                <div class="text-justify" style="text-indent: 1rem">{{$about->getHomeContent()}}</div>
                 <a href="/sobre" class="btn mt-2">Saiba mais</a>
             </div>
         </div>

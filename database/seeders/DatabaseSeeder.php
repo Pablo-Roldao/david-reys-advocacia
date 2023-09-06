@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             PhoneSeeder::class,
             PostSeeder::class,
             TeamMemberSeeder::class,
+            OfficeSeeder::class
         ]);
     }
 }

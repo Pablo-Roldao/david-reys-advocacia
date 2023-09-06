@@ -17,7 +17,10 @@ class OfficeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->city(),
+            'phone' => $this->faker->numerify('(##) #####-####'),
+            'address' => $this->faker->address(),
+            'map_link' => 'https://www.google.com.br/maps/preview',
         ];
     }
 }

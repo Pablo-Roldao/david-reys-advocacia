@@ -37,6 +37,11 @@
                         Time
                     </x-button-link>
                 </a>
+                <a href="{{route('admin.offices')}}">
+                    <x-button-link>
+                        Escritórios
+                    </x-button-link>
+                </a>
             </div>
         </div>
     </div>

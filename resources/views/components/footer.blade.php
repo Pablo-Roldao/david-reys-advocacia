@@ -1,6 +1,7 @@
 @php
     $phones = \App\Repositories\EloquentPhoneRepository::getAll();
     $contact = \App\Repositories\EloquentContactRepository::get();
+    $offices = \App\Repositories\EloquentOfficeRepository::getAll();
 @endphp
 <div class="container text-white pt-5 px-sm-3 px-md-5">
 
@@ -57,14 +58,10 @@
         <div class="mr-5 mb-5 col">
             <h4 class="font-weight-semi-bold footer__subtitle mb-4  text-uppercase">Nossos Escritórios</h4>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-white mb-2" href="https://goo.gl/maps/y6yQ1GoH5KJYfLW7A"><i
-                        class="fa fa-angle-right mr-2"></i>Maceió-AL</a>
-                <a class="text-white mb-2" href="https://goo.gl/maps/hvrzXTFNZnktyhUGA"><i
-                        class="fa fa-angle-right mr-2"></i>Garanhuns-PE</a>
-                <a class="text-white mb-2" href="https://goo.gl/maps/KxTPVeQhCbGPtWKu7"><i
-                        class="fa fa-angle-right mr-2"></i>União dos Palmares-AL</a>
-                <a class="text-white mb-2" href="https://goo.gl/maps/spceyVQ39dArHmZf9"><i
-                        class="fa fa-angle-right mr-2"></i> Porto Calvo-AL</a>
+                @foreach($offices as $office)
+                    <a class="text-white mb-2" href="{{$office->getMapLink()}}"><i
+                            class="fa fa-angle-right mr-2"></i>{{$office->getName()}}</a>
+                @endforeach
             </div>
         </div>
     </div>

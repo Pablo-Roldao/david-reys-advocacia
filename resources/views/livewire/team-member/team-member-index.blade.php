@@ -35,7 +35,7 @@
         @endforeach
     </div>
 
-    <div>
+    <div class="mt-4">
         {{$teamMembers->links()}}
     </div>
 </section>

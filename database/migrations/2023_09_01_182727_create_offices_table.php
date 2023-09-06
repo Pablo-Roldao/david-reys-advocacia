@@ -16,6 +16,12 @@ return new class extends Migration
         Schema::create('offices', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->string('name');
+            $table->string('phone', 15);
+            $table->string('address');
+            $table->string('map_link');
+            $table->string('photo_path')->nullable();
         });
     }
 
