@@ -30,6 +30,7 @@ Route::middleware([
     Route::get('/admin-posts', \App\Http\Livewire\Post\PostIndex::class)->name('admin.posts');
     Route::get('/admin-time', \App\Http\Livewire\TeamMember\TeamMemberIndex::class)->name('admin.team');
     Route::get('/admin-escritorios', \App\Http\Livewire\Office\OfficeIndex::class)->name('admin.offices');
+    Route::get('/admin-servicos', \App\Http\Livewire\Service\ServiceIndex::class)->name('admin.services');
 
 });
 

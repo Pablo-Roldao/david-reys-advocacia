@@ -16,6 +16,10 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->string('title');
+            $table->text('content');
+            $table->string('photo_path')->nullable();
         });
     }
 

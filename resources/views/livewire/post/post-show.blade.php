@@ -19,7 +19,7 @@
                 <img src="{{asset('storage/' . $post->getCoverPath())}}" alt="Capa do post"
                      class="h-56 w-full object-cover rounded-lg"/>
             @endif
-            <div class="whitespace-pre-wrap text-justify">
+            <div class="whitespace-pre-line text-justify">
                 {{$post->getContent()}}
             </div>
         </x-slot>

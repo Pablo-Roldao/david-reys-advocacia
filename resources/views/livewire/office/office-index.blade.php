@@ -1,7 +1,7 @@
 <section class="p-6">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Time
+            Escritórios
         </h2>
     </x-slot>
     <div class="grid grid-cols-6 gap-4 mb-3">

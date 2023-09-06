@@ -42,6 +42,11 @@
                         Escritórios
                     </x-button-link>
                 </a>
+                <a href="{{route('admin.services')}}">
+                    <x-button-link>
+                        Serviços
+                    </x-button-link>
+                </a>
             </div>
         </div>
     </div>
