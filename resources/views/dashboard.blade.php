@@ -47,6 +47,11 @@
                         Serviços
                     </x-button-link>
                 </a>
+                <a href="{{route('admin.images')}}">
+                    <x-button-link>
+                        Imagem do site
+                    </x-button-link>
+                </a>
             </div>
         </div>
     </div>

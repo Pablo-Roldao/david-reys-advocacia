@@ -1,14 +1,10 @@
 <article id="contact" class="container-fluid py-5 pb-0 ">
     <div class="container">
         <a href="/contato" class="p-0">
-            <div class="bg-action rounded">
-                <div class="row h-100 align-items-center justify-content-center">
-                </div>
-            </div>
-            <div class="bg-action-desktop rounded">
-                <div class="row h-100 align-items-center justify-content-center">
-                </div>
-            </div>
+            @php
+                $imageContact = \App\Repositories\EloquentImageContactRepository::get();
+            @endphp
+            <img src="{{asset('storage/' . $imageContact->getPhotoPath())}}" alt="Imagem do serviço" class="w-100 rounded">
         </a>
     </div>
 </article>

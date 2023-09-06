@@ -1,5 +1,6 @@
 @php
     $about = \App\Repositories\EloquentAboutRepository::get();
+    $imageAbout = \App\Repositories\EloquentImageAboutRespository::get();
 @endphp
 <x-guest-layout>
     <x-navbar
@@ -25,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded" src="../../img/about.png" alt="">
+                    <img class="img-fluid rounded" src="{{asset('storage/' . $imageAbout->getPhotoPath())}}" alt="">
                 </div>
                 <div class="col-lg-7 mt-4 mt-lg-0">
                     <h1 class="mb-4 about-services">{{$about->getTitle()}}</h1>

@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
             TeamMemberSeeder::class,
             OfficeSeeder::class,
             ServiceSeeder::class,
+            ImageContactSeeder::class,
+            ImageAboutSeeder::class,
         ]);
     }
 }
