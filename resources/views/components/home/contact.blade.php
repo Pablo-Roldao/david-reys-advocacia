@@ -4,7 +4,7 @@
             @php
                 $imageContact = \App\Repositories\EloquentImageContactRepository::get();
             @endphp
-            <img src="{{asset('storage/' . $imageContact->getPhotoPath())}}" alt="Imagem do serviço" class="w-100 rounded">
+            <img src="{{asset('storage/' . $imageContact->getPhotoPath())}}" alt="Imagem do link de contato" class="w-100 rounded">
         </a>
     </div>
 </article>

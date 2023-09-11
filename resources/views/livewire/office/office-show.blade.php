@@ -2,7 +2,7 @@
     <button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled'
             class="bg-white rounded-lg p-6 h-full flex flex-col">
         @if($office->getPhotoPath() !== null)
-            <img src="{{asset('storage/' . $office->getPhotoPath())}}" alt="Foto do membro do time"
+            <img src="{{asset('storage/' . $office->getPhotoPath())}}" alt="Foto do escritório"
                  class="h-56 w-full object-contain rounded-lg"/>
         @endif
         <span class="font-bold">{{$office->getName()}}</span>
@@ -19,7 +19,7 @@
         <x-slot name='content'>
             <div>
                 @if($office->getPhotoPath() !== null)
-                    <img src="{{asset('storage/' . $office->getPhotoPath())}}" alt="Foto do membro do time"
+                    <img src="{{asset('storage/' . $office->getPhotoPath())}}" alt="Foto do escritório"
                          class="h-96 mx-auto rounded-lg"/>
                 @endif
                 <span class="text-xl font-bold block">{{$office->getName()}}</span>

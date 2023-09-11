@@ -62,3 +62,4 @@ Route::get('/posts', function () {
 })->name('posts');
 
 
+Route::post('/send-contact', [\App\Http\Controllers\SendContactController::class, 'sendContact'])->name('send-contact');

@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Office;
 
 use App\Repositories\EloquentOfficeRepository;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 
 class OfficeDestroy extends Component
@@ -26,6 +27,8 @@ class OfficeDestroy extends Component
 
     public function destroy(): void
     {
+        Storage::disk('public')->delete($this->office->getPhotoPath());
+
         EloquentOfficeRepository::delete($this->office->id);
 
         $this->dispatchBrowserEvent('officeDestroyed', [

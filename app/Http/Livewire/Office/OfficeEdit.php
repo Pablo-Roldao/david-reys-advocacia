@@ -13,7 +13,7 @@ class OfficeEdit extends Component
     use WithFileUploads;
 
     public $office;
-    public $photo;
+    public $photoOffice;
     public bool $showModal = false;
     public $formId;
 
@@ -21,8 +21,8 @@ class OfficeEdit extends Component
         'office.name' => 'required|min:3',
         'office.address' => 'required|min:3',
         'office.map_link' => 'required|min:3',
-        'office.phone' => 'required|min:15|max:15',
-        'photo' => 'image|nullable|max:2048'
+        'office.phone' => 'required|min:14|max:15',
+        'photoOffice' => 'image|max:2048'
     ];
 
     public function mount(): void
@@ -55,11 +55,11 @@ class OfficeEdit extends Component
     {
         $this->validate();
 
-        if (!empty($this->photo)) {
-            $this->office->photo_path = $this->photo->store('office-photos', 'public');
-        } elseif (!empty($this->photo) && empty($this->office->getPhotoPath)) {
-            $this->office->photo_path = 'office-photos/office.png';
+        if (!empty($this->photoOffice)) {
+            $this->office->photo_path = $this->photoOffice->store('office-photos', 'public');
         }
+        $this->office->photo_path = $this->photoOffice->store('office-photos', 'public');
+
 
         EloquentOfficeRepository::update($this->office->getId(), $this->office);
 

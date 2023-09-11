@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\ImageAbout;
 
 use App\Repositories\EloquentImageAboutRespository;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -18,7 +19,7 @@ class ImageAboutEdit extends Component
     public $formId;
 
     protected array $rules = [
-        'photo' => 'image|max:2048'
+        'photo' => 'required|image|max:2048'
     ];
 
     public function mount(): void
@@ -51,24 +52,16 @@ class ImageAboutEdit extends Component
     {
         $this->validate();
 
-        if (!empty($this->photo)) {
-            $this->imageAbout->photo_path = $this->photo->store('image-about', 'public');
-        } elseif (!empty($this->photo) && empty($this->imageAbout->getPhotoPath)) {
-            $this->imageAbout->photo_path = 'image-about/about.png';
-        }
+        Storage::disk('public')->delete($this->imageAbout->getPhotoPath());
+        $this->imageAbout->photo_path = $this->photo->store('image-about', 'public');
 
         EloquentImageAboutRespository::update($this->imageAbout);
-
-        /*$this->dispatchBrowserEvent('imageAboutEdited', [
-            'title' => 'Imagem do sobre atualizada com sucesso!',
-            'icon' => 'success',
-            'iconColor' => 'blue'
-        ]);*/
 
         $this->reset();
         $this->closeModal();
         redirect()->route('admin.images');
     }
+
     public function render()
     {
         return view('livewire.image-about.image-about-edit');

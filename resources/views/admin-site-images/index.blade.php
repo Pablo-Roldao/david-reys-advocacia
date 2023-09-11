@@ -9,6 +9,8 @@
         <section>
             <livewire:image-contact.image-contact-index/>
             <livewire:image-about.image-about-index/>
+            <livewire:image-apresentation-desktop.image-apresentation-desktop-index/>
+            <livewire:image-apresentation-mobile.image-apresentation-mobile-index/>
         </section>
     </div>
 </x-app-layout>

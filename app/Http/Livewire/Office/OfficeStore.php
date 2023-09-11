@@ -20,8 +20,8 @@ class OfficeStore extends Component
         'office.name' => 'required|min:3',
         'office.address' => 'required|min:3',
         'office.map_link' => 'required|min:3',
-        'office.phone' => 'required|min:15|max:15',
-        'photo' => 'image|nullable|max:2048'
+        'office.phone' => 'required|min:14|max:15',
+        'photo' => 'image|max:2048'
     ];
 
     public function mount(): void
@@ -54,11 +54,7 @@ class OfficeStore extends Component
     {
         $this->validate();
 
-        if (!empty($this->photo)) {
-            $this->office->photo_path =  $this->photo->store('office-photos', 'public');
-        } else {
-            $this->office->photo_path = 'office-photos/office.png';
-        }
+        $this->office->photo_path = $this->photo->store('office-photos', 'public');
 
         EloquentOfficeRepository::store($this->office);
 

@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Service;
 
 use App\Repositories\EloquentServiceRepository;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 
 class ServiceDestroy extends Component
@@ -26,6 +27,7 @@ class ServiceDestroy extends Component
 
     public function destroy(): void
     {
+        Storage::disk('public')->delete($this->service->getPhotoPath());
         EloquentServiceRepository::delete($this->service->id);
 
         $this->dispatchBrowserEvent('serviceDestroyed', [

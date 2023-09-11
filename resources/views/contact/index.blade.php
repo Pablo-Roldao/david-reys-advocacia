@@ -1,8 +1,9 @@
 <x-guest-layout>
-    <x-navbar about={{true}} services={{true}} team={{true}} articles={{true}} links={{true}} offices={{true}} contact={{false}}></x-navbar>
+    <x-navbar
+        about={{true}} services={{true}} team={{true}} articles={{true}} links={{true}} offices={{true}} contact={{false}}></x-navbar>
 
     <!-- Page Header Start -->
-    <div class="container-fluid bg-page-header" style="margin-bottom: 90px;">
+    <div class="container-fluid" style="margin-bottom: 90px; background-color: #19197B;">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
                 <h3 class="display-3 text-white text-uppercase">Contato</h3>
@@ -25,7 +26,9 @@
             <div class="mb-5 mb-lg-0">
                 <div class="contact-form">
                     <div id="success"></div>
-                    <form id="form" class="form" action="sendContact.php" method="post">
+                    <form id="form" class="form" action="{{route('send-contact')}}" method="post">
+                        @csrf
+
                         <label for="name" class="form-label">Nome:</label>
                         <input type="text" id="name" name="name" class="name form-control mb-3" required>
                         <label for="phone" class="form-label">Telefone:</label>
@@ -33,12 +36,13 @@
                         <label for="email" class="form-label">E-mail:</label>
                         <input type="text" id="email" name="email" class="email form-control mb-3" required>
                         <label for="message">Mensagem:</label>
-                        <textarea name="message" id="message" cols="30" rows="10" class="form-control mb-3" required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control mb-3"
+                                  required></textarea>
 
                         <button type="submit" id="submitButton"
-                            class="btn btn-primary btn-block text-white btn-enviar">Enviar</button>
+                                class="btn btn-primary btn-block text-white btn-enviar">Enviar
+                        </button>
                     </form>
-                    </main>
                 </div>
             </div>
         </div>

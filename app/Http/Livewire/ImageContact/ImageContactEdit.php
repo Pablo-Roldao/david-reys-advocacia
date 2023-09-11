@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\ImageContact;
 
 use App\Repositories\EloquentImageContactRepository;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -51,19 +52,10 @@ class ImageContactEdit extends Component
     {
         $this->validate();
 
-        if (!empty($this->photo)) {
-            $this->imageContact->photo_path = $this->photo->store('image-contact', 'public');
-        } elseif (!empty($this->photo) && empty($this->imageContact->getPhotoPath)) {
-            $this->imageContact->photo_path = 'image-contact/contact.png';
-        }
+        Storage::disk('public')->delete($this->imageContact->getPhotoPath());
+        $this->imageContact->photo_path = $this->photo->store('image-contact', 'public');
 
         EloquentImageContactRepository::update($this->imageContact);
-
-        /*$this->dispatchBrowserEvent('imageContactEdited', [
-            'title' => 'Imagem do contato atualizada com sucesso!',
-            'icon' => 'success',
-            'iconColor' => 'blue'
-        ]);*/
 
         $this->reset();
         $this->closeModal();

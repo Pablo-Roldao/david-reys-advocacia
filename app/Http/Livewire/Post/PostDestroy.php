@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Post;
 
 use App\Repositories\EloquentPostRepository;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 
 class PostDestroy extends Component
@@ -26,6 +27,8 @@ class PostDestroy extends Component
 
     public function destroy(): void
     {
+        Storage::disk('public')->delete($this->service->getCoverPath());
+
         EloquentPostRepository::delete($this->post->id);
 
         $this->dispatchBrowserEvent('postDestroyed', [

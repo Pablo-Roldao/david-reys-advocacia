@@ -95,9 +95,15 @@
                 value = value.slice(0, 11);
             }
 
-            value = value.replace(/\D/g, "")
-            value = value.replace(/(\d{2})(\d)/, "($1) $2")
-            value = value.replace(/(\d{5})(\d)/, "$1-$2")
+            if (value.length <= 2) {
+                value = `(${value}`;
+            } else if (value.length <= 5) {
+                value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+            } else if (value.length <= 10) {
+                value = `(${value.slice(0, 2)}) ${value.slice(2, 6)}-${value.slice(6)}`;
+            } else {
+                value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
+            }
 
             phoneInput.value = value;
         });

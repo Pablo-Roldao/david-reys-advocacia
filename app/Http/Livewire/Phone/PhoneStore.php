@@ -14,14 +14,15 @@ class PhoneStore extends Component
     public bool $showModal = false;
 
     protected array $rules = [
-        'phone.phone' => 'required|min:15|max:15|unique:phones,phone',
+        'phone.phone' => 'required|min:14|max:15|unique:phones,phone',
         'phone.name' => 'required|min:3',
         'phone.is_whatsapp' => 'required'
     ];
 
     public function mount(): void
     {
-        $this->phone = Phone::factory()->makeOne();
+        $this->phone = new Phone();
+        $this->phone->is_whatsapp = false;
     }
 
     protected $listeners = ['showModal' => 'showModal', 'closeModal' => 'closeModal'];
@@ -50,6 +51,7 @@ class PhoneStore extends Component
         $this->validate();
 
         EloquentPhoneRepository::create($this->phone);
+
 
         $this->dispatchBrowserEvent('phoneStored', [
             'title' => 'Telefone/WhatsApp criado com sucesso!',

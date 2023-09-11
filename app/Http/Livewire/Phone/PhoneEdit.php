@@ -13,7 +13,7 @@ class PhoneEdit extends Component
     public $formId;
 
     protected array $rules = [
-        'phone.phone' => 'required|min:15|max:15',
+        'phone.phone' => 'required|min:14|max:15',
         'phone.name' => 'required|min:3',
         'phone.is_whatsapp' => 'required'
     ];

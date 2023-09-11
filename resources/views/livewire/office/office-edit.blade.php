@@ -49,11 +49,11 @@
                         <x-input-error for="office.map_link"/>
                     </div>
                     <div class="mb-4">
-                        <x-label for="photo" value="Nova foto"/>
+                        <x-label for="photoOffice" value="Nova foto"/>
                         <input label="Nova foto" placeholder="Nova foto"
-                               wire:model="photo" name="photo" id="photo"
+                               wire:model="photoOffice" name="photoOffice" id="photoOffice"
                                class="w-full" type="file" accept="image/jpeg, image/png, image/jpg"/>
-                        <x-input-error for="photo"/>
+                        <x-input-error for="photoOffice"/>
                     </div>
                 </form>
             </div>
