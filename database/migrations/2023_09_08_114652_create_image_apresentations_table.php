@@ -16,6 +16,11 @@ return new class extends Migration
         Schema::create('image_apresentations', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->string('photo_path');
+            $reflectionImageTypesEnum = new ReflectionClass(\App\Enum\ImageTypesEnum::class);
+            $types = $reflectionImageTypesEnum->getConstants();
+            $table->enum('type', $types);
         });
     }
 

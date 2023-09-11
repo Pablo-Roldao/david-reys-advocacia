@@ -59,16 +59,15 @@ class ImageContactEdit extends Component
 
         EloquentImageContactRepository::update($this->imageContact);
 
-        $this->dispatchBrowserEvent('imageContactEdited', [
+        /*$this->dispatchBrowserEvent('imageContactEdited', [
             'title' => 'Imagem do contato atualizada com sucesso!',
             'icon' => 'success',
             'iconColor' => 'blue'
-        ]);
+        ]);*/
 
         $this->reset();
         $this->closeModal();
         redirect()->route('admin.images');
-
     }
 
     public function render()

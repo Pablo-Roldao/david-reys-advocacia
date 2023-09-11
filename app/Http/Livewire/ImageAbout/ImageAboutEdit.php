@@ -59,14 +59,15 @@ class ImageAboutEdit extends Component
 
         EloquentImageAboutRespository::update($this->imageAbout);
 
-        $this->dispatchBrowserEvent('imageAboutEdited', [
+        /*$this->dispatchBrowserEvent('imageAboutEdited', [
             'title' => 'Imagem do sobre atualizada com sucesso!',
             'icon' => 'success',
             'iconColor' => 'blue'
-        ]);
+        ]);*/
 
         $this->reset();
         $this->closeModal();
+        redirect()->route('admin.images');
     }
     public function render()
     {

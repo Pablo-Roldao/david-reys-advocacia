@@ -5,12 +5,13 @@
         <livewire:image-about.image-about-edit :imageAbout="$imageAbout" :wire:key="'edit-image-about-'.$imageAbout->getId()"/>
     </div>
     <img src="{{asset('storage/' . $imageAbout->getPhotoPath())}}" alt="Foto da imagem do sobre"
-         class="rounded-lg mx-auto"/>
+         class="rounded-lg mx-auto h-52"/>
 </div>
+
 
 <script>
 
-    const eventsToWaitFor = ['imageAboutEdited'];
+    const eventsToWaitFor = ['imageAboutDestroyed', 'imageAboutEdited', 'imageAboutStored'];
 
     function handleEvent(e) {
         Swal.fire({

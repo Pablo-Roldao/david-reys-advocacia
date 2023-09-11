@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             ServiceSeeder::class,
             ImageContactSeeder::class,
             ImageAboutSeeder::class,
+            ImageApresentationSeeder::class,
         ]);
     }
 }
