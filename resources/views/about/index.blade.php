@@ -22,7 +22,7 @@
     <!-- Page Header End -->
 
 
-    <article id="about" class="container-fluid py-5 pb-5">
+    <article id="about" class="container-fluid mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

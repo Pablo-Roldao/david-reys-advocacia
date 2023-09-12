@@ -22,7 +22,7 @@
     </div>
     <!-- Page Header End -->
 
-    <article id="about" class="container-fluid py-5 pb-5">
+    <article id="about" class="container-fluid mb-5 pb-5">
             @foreach($team as $teamMember)
                 <div class="container py-4" id="{{$teamMember->getId()}}">
                     <div class="row d-flex justify-content-center">

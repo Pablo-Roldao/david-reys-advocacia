@@ -18,7 +18,7 @@
     <!-- Page Header End -->
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5 pb-5">
+    <div class="container-fluid mb-5 pb-5">
         <div class="container">
             <div class="text-center pb-2">
                 <h1 class="mb-4 text-uppercase">Entre em contato</h1>

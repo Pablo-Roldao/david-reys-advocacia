@@ -22,7 +22,7 @@
     </div>
     <!-- Page Header End -->
 
-    <article id="about" class="container-fluid py-5 pb-5">
+    <article id="about" class="container-fluid mb-5 pb-2">
         <div class="container">
             <div class="row">
                 @foreach($offices as $office)

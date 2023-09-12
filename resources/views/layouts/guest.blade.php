@@ -48,9 +48,8 @@
 <body>
 <div class="font-sans text-gray-900 antialiased">
     {{ $slot }}
-    <footer>
+
         <x-footer></x-footer>
-    </footer>
 
     <x-backToTopWhatsapp></x-backToTopWhatsapp>
 
