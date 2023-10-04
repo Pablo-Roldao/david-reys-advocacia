@@ -5,54 +5,49 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="mx-auto sm:px-6 lg:px-8">
+    <div class="p-4 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:p-0 sm:mx-10">
+        <a href="{{route('admin.about')}}">
+            <x-button-link>
+                Sobre nós
+            </x-button-link>
+        </a>
 
-            <div class="grid grid-cols-4 gap-4">
-                <a href="{{route('admin.about')}}">
-                    <x-button-link>
-                        Sobre
-                    </x-button-link>
-                </a>
+        <a href="{{route('admin.expertise-area')}}">
+            <x-button-link>
+                Área de atuação
+            </x-button-link>
+        </a>
 
-                <a href="{{route('admin.expertise-area')}}">
-                    <x-button-link>
-                        Área de atuação
-                    </x-button-link>
-                </a>
+        <a href="{{route('admin.contact')}}">
+            <x-button-link>
+                Contato
+            </x-button-link>
+        </a>
 
-                <a href="{{route('admin.contact')}}">
-                    <x-button-link>
-                        Contato
-                    </x-button-link>
-                </a>
-
-                <a href="{{route('admin.posts')}}">
-                    <x-button-link>
-                        Posts
-                    </x-button-link>
-                </a>
-                <a href="{{route('admin.team')}}">
-                    <x-button-link>
-                        Time
-                    </x-button-link>
-                </a>
-                <a href="{{route('admin.offices')}}">
-                    <x-button-link>
-                        Escritórios
-                    </x-button-link>
-                </a>
-                <a href="{{route('admin.services')}}">
-                    <x-button-link>
-                        Serviços
-                    </x-button-link>
-                </a>
-                <a href="{{route('admin.images')}}">
-                    <x-button-link>
-                        Imagem do site
-                    </x-button-link>
-                </a>
-            </div>
-        </div>
+        <a href="{{route('admin.posts')}}">
+            <x-button-link>
+                Artigos
+            </x-button-link>
+        </a>
+        <a href="{{route('admin.team')}}">
+            <x-button-link>
+                Nossa equipe
+            </x-button-link>
+        </a>
+        <a href="{{route('admin.offices')}}">
+            <x-button-link>
+                Escritórios
+            </x-button-link>
+        </a>
+        <a href="{{route('admin.services')}}">
+            <x-button-link>
+                Serviços
+            </x-button-link>
+        </a>
+        <a href="{{route('admin.images')}}">
+            <x-button-link>
+                Imagens do site
+            </x-button-link>
+        </a>
     </div>
 </x-app-layout>

@@ -39,7 +39,7 @@
                     <a class="text-white mb-2" href="{{route('team')}}"><i class="fa fa-angle-right mr-2"></i>Nossa
                         equipe</a>
                     <a class="text-white mb-2" href="{{route('offices')}}"><i class="fa fa-angle-right mr-2"></i>Escritórios</a>
-                    <a class="text-white mb-2" href="{{route('posts')}}"><i class="fa fa-angle-right mr-2"></i>Posts</a>
+                    <a class="text-white mb-2" href="{{route('posts')}}"><i class="fa fa-angle-right mr-2"></i>Artigos</a>
                     <a class="text-white" href="{{route('contact')}}"><i class="fa fa-angle-right mr-2"></i>Contato</a>
                 </div>
             </div>

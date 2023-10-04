@@ -25,8 +25,7 @@ class PostStore extends Component
 
     public function mount(): void
     {
-        /*$this->post = new Post();*/
-        $this->post = Post::factory()->make();
+        $this->post = new Post();
     }
 
     protected $listeners = ['showModal' => 'showModal', 'closeModal' => 'closeModal'];

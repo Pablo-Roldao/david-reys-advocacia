@@ -1,6 +1,6 @@
 <section>
     {{-- Destroy button --}}
-    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled' class="bg-red-600">
+    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled' class="bg-red-600 w-full flex justify-center">
         Excluir
     </x-button>
 
@@ -8,14 +8,14 @@
         {{-- Title --}}
         <x-slot name='title'>
             <div class="text-start">
-                <h1 class="text-xl">Excluir post</h1>
+                <h1 class="text-xl">Excluir artigo</h1>
             </div>
         </x-slot>
 
         {{-- Content --}}
         <x-slot name='content'>
             <div class="text-start">
-                <p>Tem certeza que deseja excluir esse post?</p>
+                <p>Tem certeza que deseja excluir esse artigo?</p>
                 </form>
             </div>
         </x-slot>

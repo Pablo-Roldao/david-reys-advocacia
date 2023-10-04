@@ -1,6 +1,6 @@
 <section>
     {{-- Edit button --}}
-    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled'>
+    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled' class="w-full h-full flex justify-center">
         Editar
     </x-button>
 

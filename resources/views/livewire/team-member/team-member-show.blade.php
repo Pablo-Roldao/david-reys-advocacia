@@ -32,7 +32,7 @@
         {{-- Footer --}}
         <x-slot name='footer'>
 
-            <div class="flex gap-4">
+            <div class="grid gap-4 w-full sm:flex">
                 {{--Destroy button--}}
                 <livewire:team-member.team-member-destroy :teamMember="$teamMember" :wire:key="'destroy-team-member-'.$teamMember->getId()"/>
 
@@ -40,7 +40,7 @@
                 <livewire:team-member.team-member-edit :teamMember="$teamMember" :wire:key="'edit-teamMember-'.$teamMember->getId()"/>
 
                 {{-- Cancel button --}}
-                <x-secondary-button wire:click="$emitSelf('closeModal')" wire:loading.attr="disabled">
+                <x-secondary-button wire:click="$emitSelf('closeModal')" wire:loading.attr="disabled" class="w-full h-full flex justify-center">
                     Fechar
                 </x-secondary-button>
             </div>

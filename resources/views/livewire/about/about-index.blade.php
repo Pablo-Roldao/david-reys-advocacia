@@ -1,11 +1,11 @@
-<div>
+<article class="p-4 sm:px-16">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Sobre
         </h2>
     </x-slot>
 
-    <section class="container mx-auto my-4 bg-white rounded-lg p-6 text-gray-800">
+    <section class="bg-white rounded-lg p-6 text-gray-800 sm:mx-10">
         <div class="flex justify-between mb-4">
             <h2 class="text-2xl font-bold">Sobre</h2>
             <livewire:about.about-edit :about="$about"/>
@@ -34,7 +34,7 @@
             </div>
         </article>
     </section>
-</div>
+</article>
 
 <script>
     window.addEventListener('aboutEdited', (e) => {

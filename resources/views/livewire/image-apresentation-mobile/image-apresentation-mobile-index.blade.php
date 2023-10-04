@@ -1,6 +1,6 @@
-<div class="container rounded-lg bg-white p-6 mt-4">
+<div class="rounded-lg bg-white p-6 mt-4">
     <div class="flex justify-between mb-4">
-        <h1 class="text-xl">Imagens de apresentação - telas menores</h1>
+        <h1 class="text-xl">Imagens de apresentação para smartphones</h1>
         <livewire:image-apresentation-mobile.image-apresentation-mobile-store :wire:key="'store-image-apresentation-mobile-'" />
 
     </div>

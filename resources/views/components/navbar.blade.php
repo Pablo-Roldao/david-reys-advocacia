@@ -3,7 +3,7 @@
     $posts = true;
 @endphp
 
-<div id="navbar" class="container">
+<div id="navbar" class="container sm:px-24">
     <div class="row">
 
         <div class="col-lg-2 navbar-brand-area navbar-brand-area-desktop-index">
@@ -64,7 +64,7 @@
                         @endif
                         @if ($posts)
                             <li class="nav-item"><a href="{{route('posts')}}"
-                                                    class="nav-item nav-link">Posts</a>
+                                                    class="nav-item nav-link">Artigos</a>
                             </li>
                         @endif
                         @if ($contact)

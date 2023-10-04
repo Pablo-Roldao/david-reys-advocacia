@@ -26,7 +26,7 @@ class OfficeStore extends Component
 
     public function mount(): void
     {
-        $this->office = Office::factory()->make();
+        $this->office = new Office();
     }
 
     protected $listeners = ['showModal' => 'showModal', 'closeModal' => 'closeModal'];

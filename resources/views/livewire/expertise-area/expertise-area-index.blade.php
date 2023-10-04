@@ -1,11 +1,11 @@
-<div>
+<article class="p-4">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Areá de atuação
+            Área de atuação
         </h2>
     </x-slot>
 
-    <section class="container mx-auto my-4 bg-white rounded-lg p-6 text-gray-800">
+    <section class="bg-white rounded-lg p-6 text-gray-800 sm:mx-10">
         <div class="flex justify-between">
             <h2 class="text-2xl font-bold">Área de atuação</h2>
             <livewire:expertise-area.expertise-area-edit :expertiseArea="$expertiseArea" />
@@ -19,7 +19,7 @@
 
 
     </section>
-</div>
+</article>
 
 <script>
     window.addEventListener('expertiseAreaEdited', (e) => {

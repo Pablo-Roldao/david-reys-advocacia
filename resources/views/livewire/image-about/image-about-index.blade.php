@@ -1,4 +1,4 @@
-<div class="container rounded-lg bg-white p-6 mt-4">
+<div class="rounded-lg bg-white p-6 mt-4">
     <div class="flex justify-between mb-4">
         <h1 class="text-xl">Imagem do sobre</h1>
         {{--Edit button--}}

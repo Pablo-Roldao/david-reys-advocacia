@@ -1,6 +1,6 @@
 <section>
     {{-- Edit button --}}
-    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled'>
+    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled' class="w-full flex justify-center">
         Editar
     </x-button>
 
@@ -8,7 +8,7 @@
         {{-- Title --}}
         <x-slot name='title'>
             <div class="text-start">
-                <h1 class="text-xl">Editar post</h1>
+                <h1 class="text-xl">Editar artigo</h1>
             </div>
         </x-slot>
 

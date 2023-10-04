@@ -5,15 +5,15 @@
     </div>
     <table class="w-full text-center bg-blue-900 text-white rounded-lg shadow-lg">
         <thead>
-        <th class="py-2 px-4">Tipo</th>
-        <th class="py-2 px-4">Número</th>
-        <th class="py-2 px-4">Nome</th>
-        <th class="py-2 px-4 text-end"></th>
+        <th class="p-3 hidden sm:table-cell">Tipo</th>
+        <th class="p-3 hidden sm:table-cell">Número</th>
+        <th class="p-3">Nome</th>
+        <th class="p-3 text-end"></th>
         </thead>
         <tbody class="rounded bg-white text-gray-800">
         @foreach($phones as $phone)
             <tr>
-                <td class="flex justify-center">
+                <td class="flex justify-center  hidden sm:table-cell">
                     @if($phone->getIsWhatsapp())
                         <img src="./img/whatsapp-logo.png" width="20px">
                     @else
@@ -22,7 +22,7 @@
                         </svg>
                     @endif
                 </td>
-                <td>{{$phone->getNumber()}}</td>
+                <td class=" hidden sm:table-cell">{{$phone->getNumber()}}</td>
                 <td>{{$phone->getName()}}</td>
                 <td class="flex justify-end">
                     <livewire:phone.phone-destroy :phone="$phone" :wire:key="'destroy-phone-'.$phone->id"/>

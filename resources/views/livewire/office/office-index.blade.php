@@ -1,44 +1,46 @@
-<section class="p-6">
+<article class="p-4">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Escritórios
         </h2>
     </x-slot>
-    <div class="grid grid-cols-6 gap-4 mb-3">
-        <x-input wire:model="search" placeholder="Pesquisar..." class="col-span-6 sm:col-span-3"/>
+    <section class="sm:mx-10">
+        <div class="grid gap-4 mb-4 sm:grid-cols-6">
+            <x-input wire:model="search" placeholder="Pesquisar..." class="col-span-6 sm:col-span-3"/>
 
-        <select placeholder="{{ __('Order by') }}" wire:model="orderBy" name="orderBy" id="orderBy"
-                class="border-gray-300 shadow-sm rounded-lg col-span-6 sm:col-span-1">
-            <option value="name">Nome</option>
-            <option value="position">Cargo</option>
-            <option value="created_at">Data de criação</option>
-            <option value="updated_at">Data de atualização</option>
-            <option value="description">Descrição</option>
-        </select>
+            <select placeholder="{{ __('Order by') }}" wire:model="orderBy" name="orderBy" id="orderBy"
+                    class="border-gray-300 shadow-sm rounded-lg col-span-6 sm:col-span-1">
+                <option value="name">Nome</option>
+                <option value="position">Cargo</option>
+                <option value="created_at">Data de criação</option>
+                <option value="updated_at">Data de atualização</option>
+                <option value="description">Descrição</option>
+            </select>
 
-        <select placeholder="{{ __('Per page') }}" wire:model="perpage" name="perpage" id="perpage"
-                class="border-gray-300 shadow-sm rounded-lg col-span-6 sm:col-span-1">
-            <option value="4">{{ 4 }}</option>
-            <option value="8">{{ 8 }}</option>
-            <option value="16">{{ 16 }}</option>
-            <option value="32">{{ 32 }}</option>
-        </select>
+            <select placeholder="{{ __('Per page') }}" wire:model="perpage" name="perpage" id="perpage"
+                    class="border-gray-300 shadow-sm rounded-lg col-span-6 sm:col-span-1">
+                <option value="4">{{ 4 }}</option>
+                <option value="8">{{ 8 }}</option>
+                <option value="16">{{ 16 }}</option>
+                <option value="32">{{ 32 }}</option>
+            </select>
 
-        <livewire:office.office-store/>
+            <livewire:office.office-store/>
 
-    </div>
+        </div>
 
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        @foreach($offices as $office)
-            <livewire:office.office-show :office="$office"
-                                                   :wire:key="'show-office' . $office->id"/>
-        @endforeach
-    </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            @foreach($offices as $office)
+                <livewire:office.office-show :office="$office"
+                                             :wire:key="'show-office' . $office->id"/>
+            @endforeach
+        </div>
 
-    <div class="mt-4">
-        {{$offices->links()}}
-    </div>
-</section>
+        <div class="mt-4">
+            {{$offices->links()}}
+        </div>
+    </section>
+</article>
 
 <script>
 

@@ -26,7 +26,7 @@ class TeamMemberStore extends Component
 
     public function mount(): void
     {
-        $this->teamMember = TeamMember::factory()->make();
+        $this->teamMember = new TeamMember();
     }
 
     protected $listeners = ['showModal' => 'showModal', 'closeModal' => 'closeModal'];

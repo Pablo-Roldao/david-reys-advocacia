@@ -1,6 +1,6 @@
 <section>
     {{-- Destroy button --}}
-    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled' class="bg-red-600">
+    <x-button wire:click="$emitSelf('showModal')" wire:loading.attr='disabled' class="bg-red-600 w-full flex justify-center">
         Excluir
     </x-button>
 

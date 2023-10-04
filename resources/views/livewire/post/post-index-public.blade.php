@@ -1,10 +1,10 @@
 <head>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<section class="container">
+<article class="px-4">
     {{$search}}
     @foreach($posts as $post)
-        <article class="p-12 mb-12 rounded">
+        <section class="p-12 mb-12 rounded sm:mx-24">
             <div class="flex justify-between">
                 <div>
                     <h1 class="text-2xl">{{$post->getTitle()}}</h1>
@@ -19,10 +19,10 @@
             <div class="whitespace-pre-wrap text-justify">
                 {{$post->getContent()}}
             </div>
-        </article>
+        </section>
         <hr class="bg-gray-600">
     @endforeach
-    <div class="mt-4 mb-4" id="">
+    <div class="mt-4 mb-4 sm:mx-24" id="">
         {{ $posts->links() }}
     </div>
-</section>
+</article>

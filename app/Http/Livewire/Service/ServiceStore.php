@@ -25,7 +25,7 @@ class ServiceStore extends Component
 
     public function mount(): void
     {
-        $this->service = Service::factory()->make();
+        $this->service = new Service();
     }
 
     protected $listeners = ['showModal' => 'showModal', 'closeModal' => 'closeModal'];
