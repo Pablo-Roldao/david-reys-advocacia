@@ -70,7 +70,7 @@
                 <div class="d-flex flex-column justify-content-start">
                     @foreach($offices as $office)
                         <a class="text-white mb-2" href="{{$office->getMapLink()}}"><i
-                                class="fa fa-angle-right mr-2"></i>{{$office->getName()}}</a>
+                                class="fa fa-angle-right mr-2" target="_blank"></i>{{$office->getName()}}</a>
                     @endforeach
                 </div>
             </div>

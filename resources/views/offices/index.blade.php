@@ -27,14 +27,14 @@
             <div class="row">
                 @foreach($offices as $office)
                     <div class="col-lg-4">
-                        <img class="img-fluid rounded" src="{{asset('storage/'.$office->getPhotoPath())}}" alt="">
+                        <img class="img-fluid rounded h-50" src="{{asset('storage/'.$office->getPhotoPath())}}" alt="">
                         <h1>{{$office->getName()}}</h1>
                         <p style="color: black!important">
                             <strong>Telefone:</strong> <a href="tel:+55{{preg_replace("/[^0-9]/", "", $office->getPhone())}}" style="color: black!important">
                             {{$office->getPhone()}}</a>
                         </p>
                         <p style="color: black!important"><strong>Endereço:</strong> <a href="{{$office->getMapLink()}}"
-                                                                       style="color: black!important">{{$office->getAddress()}}</a></p>
+                                                                       style="color: black!important" target="_blank">{{$office->getAddress()}}</a></p>
                     </div>
                 @endforeach
             </div>

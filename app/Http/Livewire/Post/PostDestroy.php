@@ -27,7 +27,7 @@ class PostDestroy extends Component
 
     public function destroy(): void
     {
-        Storage::disk('public')->delete($this->service->getCoverPath());
+        Storage::disk('public')->delete($this->post->getCoverPath());
 
         EloquentPostRepository::delete($this->post->id);
 
