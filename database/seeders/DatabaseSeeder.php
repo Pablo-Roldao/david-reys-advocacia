@@ -20,12 +20,9 @@ class DatabaseSeeder extends Seeder
             ContactSeeder::class,
             PhoneSeeder::class,
             PostSeeder::class,
-            //TeamMemberSeeder::class,
-            //OfficeSeeder::class,
-            //ServiceSeeder::class,
+            UsefulLinkSeeder::class,
             ImageContactSeeder::class,
             ImageAboutSeeder::class,
-            //ImageApresentationSeeder::class,
         ]);
     }
 }

@@ -34,6 +34,7 @@ Route::middleware([
     Route::get('/admin-imagens', function () {
         return view('admin-site-images.index');
     })->name('admin.images');
+    Route::get('/links-uteis', \App\Http\Livewire\UsefulLink\UsefulLinkIndex::class)->name('admin.useful-links');
 
 });
 
@@ -60,6 +61,10 @@ Route::get('/contato', function () {
 Route::get('/posts', function () {
     return view('posts.index');
 })->name('posts');
+
+Route::get('/links-uteis', function () {
+    return view('useful-links.useful-links');
+})->name('useful-links');
 
 
 Route::post('/send-contact', [\App\Http\Controllers\SendContactController::class, 'sendContact'])->name('send-contact');

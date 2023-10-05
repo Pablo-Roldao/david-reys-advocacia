@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\UsefulLink;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,6 @@ class UsefulLinkSeeder extends Seeder
      */
     public function run()
     {
-        //
+        UsefulLink::factory()->count(10)->create();
     }
 }

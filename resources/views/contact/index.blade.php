@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <x-navbar
+    <x-navbar usefulLinks={{true}}
         about={{true}} services={{true}} team={{true}} articles={{true}} links={{true}} offices={{true}} contact={{false}}></x-navbar>
 
     <!-- Page Header Start -->

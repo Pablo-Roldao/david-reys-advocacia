@@ -16,6 +16,9 @@ return new class extends Migration
         Schema::create('useful_links', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->string('title');
+            $table->string('link');
         });
     }
 

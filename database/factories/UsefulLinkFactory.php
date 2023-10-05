@@ -17,7 +17,8 @@ class UsefulLinkFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence(),
+            'link' => 'https://google.com.br'
         ];
     }
 }

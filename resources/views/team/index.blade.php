@@ -5,7 +5,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <x-guest-layout>
-    <x-navbar about={{true}} services={{true}} team={{false}} articles={{true}} links={{true}} offices={{true}} contact={{true}}></x-navbar>
+    <x-navbar usefulLinks={{true}} about={{true}} services={{true}} team={{false}} articles={{true}} links={{true}} offices={{true}} contact={{true}}></x-navbar>
 
     <!-- Page Header Start -->
     <div class="container-fluid" style="margin-bottom: 90px; background-color: #19197B;">

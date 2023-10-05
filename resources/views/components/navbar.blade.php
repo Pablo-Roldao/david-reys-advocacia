@@ -70,6 +70,11 @@
                                                     class="nav-item nav-link">Contato</a>
                             </li>
                         @endif
+                            @if ($usefulLinks)
+                                <li class="nav-item"><a href="{{route('useful-links')}}"
+                                                        class="nav-item nav-link">Links úteis</a>
+                                </li>
+                            @endif
                     </ul>
                 </div>
             </nav>

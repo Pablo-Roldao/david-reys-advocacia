@@ -4,7 +4,7 @@
 
 <x-guest-layout>
 
-    <x-navbar about={{ true }} services={{ true }} team={{ true }}
+    <x-navbar usefulLinks={{true}} about={{ true }} services={{ true }} team={{ true }}
         articles={{ true }} links={{ true }} offices={{ false }} contact={{ true }}></x-navbar>
 
     <!-- Page Header Start -->

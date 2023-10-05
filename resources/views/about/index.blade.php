@@ -3,7 +3,7 @@
     $imageAbout = \App\Repositories\EloquentImageAboutRespository::get();
 @endphp
 <x-guest-layout>
-    <x-navbar
+    <x-navbar usefulLinks={{true}}
         about={{0}} services={{true}} team={{true}} articles={{true}} links={{true}} offices={{true}} contact={{true}}></x-navbar>
 
     <!-- Page Header Start -->
