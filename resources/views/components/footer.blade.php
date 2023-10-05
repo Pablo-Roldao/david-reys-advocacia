@@ -47,7 +47,7 @@
                     @foreach($phones as $phone)
                         @if($phone->getIsWhatsapp())
                             <a class="text-white mb-2 flex gap-1"
-                               href="https://wa.me/{{preg_replace('/[^A-Za-z0-9]/', '', $phone->getNumber())}}">
+                               href="https://wa.me/+55{{preg_replace('/[^A-Za-z0-9]/', '', $phone->getNumber())}}">
                                 <img src="./img/whatsapp-logo.png" style="width: 20px; height: 20px;">
                                 {{$phone->getNumber()}} -
                                 {{$phone->getName()}}
@@ -67,8 +67,8 @@
                 <h4 class="font-weight-semi-bold footer__subtitle mb-4  text-uppercase">Escritórios</h4>
                 <div class="d-flex flex-column justify-content-start">
                     @foreach($offices as $office)
-                        <a class="text-white mb-2" href="{{$office->getMapLink()}}"><i
-                                class="fa fa-angle-right mr-2" target="_blank"></i>{{$office->getName()}}</a>
+                        <a class="text-white mb-2" href="{{$office->getMapLink()}}" target="_blank"><i
+                                class="fa fa-angle-right mr-2"></i>{{$office->getName()}}</a>
                     @endforeach
                 </div>
             </div>
