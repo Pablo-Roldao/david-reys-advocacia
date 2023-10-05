@@ -1,7 +1,7 @@
 <article class="p-4">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Nossa equipe
+            Equipe
         </h2>
     </x-slot>
     <section class="sm:mx-10">

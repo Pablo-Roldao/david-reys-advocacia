@@ -6,7 +6,7 @@
 
     <div class="row px-3">
         <div class="col-lg-3">
-            <h1 class="mb-1">Nossa área de atuação</h1>
+            <h1 class="mb-1">Área de atuação</h1>
             <p class="mb-0 text-left">{{$expertiseArea->getContent()}}</p>
         </div>
 

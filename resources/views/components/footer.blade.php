@@ -34,10 +34,8 @@
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Início</a>
                     <a class="text-white mb-2" href="{{route('about')}}"><i class="fa fa-angle-right mr-2"></i>Sobre nós</a>
-                    <a class="text-white mb-2" href="{{route('home')}}#services"><i class="fa fa-angle-right mr-2"></i>Nossos
-                        serviços</a>
-                    <a class="text-white mb-2" href="{{route('team')}}"><i class="fa fa-angle-right mr-2"></i>Nossa
-                        equipe</a>
+                    <a class="text-white mb-2" href="{{route('home')}}#services"><i class="fa fa-angle-right mr-2"></i>Serviços</a>
+                    <a class="text-white mb-2" href="{{route('team')}}"><i class="fa fa-angle-right mr-2"></i>Equipe</a>
                     <a class="text-white mb-2" href="{{route('offices')}}"><i class="fa fa-angle-right mr-2"></i>Escritórios</a>
                     <a class="text-white mb-2" href="{{route('posts')}}"><i class="fa fa-angle-right mr-2"></i>Artigos</a>
                     <a class="text-white" href="{{route('contact')}}"><i class="fa fa-angle-right mr-2"></i>Contato</a>
@@ -66,7 +64,7 @@
                 </div>
             </div>
             <div class="mr-5 mb-5 col">
-                <h4 class="font-weight-semi-bold footer__subtitle mb-4  text-uppercase">Nossos Escritórios</h4>
+                <h4 class="font-weight-semi-bold footer__subtitle mb-4  text-uppercase">Escritórios</h4>
                 <div class="d-flex flex-column justify-content-start">
                     @foreach($offices as $office)
                         <a class="text-white mb-2" href="{{$office->getMapLink()}}"><i

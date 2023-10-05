@@ -31,7 +31,7 @@
         </a>
         <a href="{{route('admin.team')}}">
             <x-button-link>
-                Nossa equipe
+               Equipe 
             </x-button-link>
         </a>
         <a href="{{route('admin.offices')}}">

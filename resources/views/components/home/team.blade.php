@@ -3,7 +3,7 @@
     @endphp
 <article id="team" class="container px-3 py-5">
     <div class="text-center">
-        <h1 class="mb-4">Conheça a nossa equipe</h1>
+        <h1 class="mb-4">Conheça a equipe</h1>
     </div>
     <div class="row">
         <div class="col-12 p-4">

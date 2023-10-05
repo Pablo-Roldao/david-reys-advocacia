@@ -11,11 +11,11 @@
     <div class="container-fluid" style="margin-bottom: 90px; background-color: #19197B;">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-3 text-white text-uppercase">Nossa equipe</h3>
+                <h3 class="display-3 text-white text-uppercase">Equipe</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="/">Início</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Nossa equipe</p>
+                    <p class="m-0 text-uppercase">Equipe</p>
                 </div>
             </div>
         </div>

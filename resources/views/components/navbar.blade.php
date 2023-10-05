@@ -51,12 +51,10 @@
                                     nós</a></li>
                         @endif
                         @if ($services)
-                            <li class="nav-item"><a href="{{route('home')}}#services" class="nav-item nav-link">Nossos
-                                    serviços</a></li>
+                            <li class="nav-item"><a href="{{route('home')}}#services" class="nav-item nav-link">Serviços</a></li>
                         @endif
                         @if ($team)
-                            <li class="nav-item"><a href="{{route('team')}}" class="nav-item nav-link">Nossa
-                                    equipe</a></li>
+                            <li class="nav-item"><a href="{{route('team')}}" class="nav-item nav-link">Equipe</a></li>
                         @endif
                         @if ($offices)
                             <li class="nav-item"><a href="{{route('offices')}}"
