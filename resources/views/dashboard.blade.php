@@ -50,7 +50,7 @@
             </x-button-link>
         </a>
 
-        <a href="{{route('admin.useful-links')}}">
+        <a href="{{ route('admin-useful-links') }}">
             <x-button-link>
                 Links úteis
             </x-button-link>

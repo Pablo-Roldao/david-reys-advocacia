@@ -34,7 +34,7 @@ Route::middleware([
     Route::get('/admin-imagens', function () {
         return view('admin-site-images.index');
     })->name('admin.images');
-    Route::get('/links-uteis', \App\Http\Livewire\UsefulLink\UsefulLinkIndex::class)->name('admin.useful-links');
+    Route::get('/admin-links-uteis', \App\Http\Livewire\UsefulLink\UsefulLinkIndex::class)->name('admin-useful-links');
 
 });
 
