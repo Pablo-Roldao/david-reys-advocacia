@@ -51,7 +51,8 @@
                                     nós</a></li>
                         @endif
                         @if ($services)
-                            <li class="nav-item"><a href="{{route('home')}}#services" class="nav-item nav-link">Serviços</a></li>
+                            <li class="nav-item"><a href="{{route('home')}}#services"
+                                                    class="nav-item nav-link">Serviços</a></li>
                         @endif
                         @if ($team)
                             <li class="nav-item"><a href="{{route('team')}}" class="nav-item nav-link">Equipe</a></li>
@@ -65,16 +66,16 @@
                                                     class="nav-item nav-link">Artigos</a>
                             </li>
                         @endif
+                        @if ($usefulLinks)
+                            <li class="nav-item"><a href="{{route('useful-links')}}"
+                                                    class="nav-item nav-link">Links úteis</a>
+                            </li>
+                        @endif
                         @if ($contact)
                             <li class="nav-item"><a href="{{route('contact')}}"
                                                     class="nav-item nav-link">Contato</a>
                             </li>
                         @endif
-                            @if ($usefulLinks)
-                                <li class="nav-item"><a href="{{route('useful-links')}}"
-                                                        class="nav-item nav-link">Links úteis</a>
-                                </li>
-                            @endif
                     </ul>
                 </div>
             </nav>

@@ -46,7 +46,7 @@ Route::get('/sobre', function () {
     return view('about.index');
 })->name('about');
 
-Route::get('/time', function () {
+Route::get('/equipe', function () {
     return view('team.index');
 })->name('team');
 
@@ -58,7 +58,7 @@ Route::get('/contato', function () {
     return view('contact.index');
 })->name('contact');
 
-Route::get('/posts', function () {
+Route::get('/artigos', function () {
     return view('posts.index');
 })->name('posts');
 

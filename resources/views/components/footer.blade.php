@@ -37,7 +37,8 @@
                     <a class="text-white mb-2" href="{{route('home')}}#services"><i class="fa fa-angle-right mr-2"></i>Serviços</a>
                     <a class="text-white mb-2" href="{{route('team')}}"><i class="fa fa-angle-right mr-2"></i>Equipe</a>
                     <a class="text-white mb-2" href="{{route('offices')}}"><i class="fa fa-angle-right mr-2"></i>Escritórios</a>
-                    <a class="text-white mb-2" href="{{route('posts')}}"><i class="fa fa-angle-right mr-2"></i>Artigos</a>
+                    <a class="text-white mb-2" href="{{route('posts')}}"><i
+                            class="fa fa-angle-right mr-2"></i>Artigos</a>
                     <a class="text-white" href="{{route('contact')}}"><i class="fa fa-angle-right mr-2"></i>Contato</a>
                 </div>
             </div>
@@ -75,10 +76,9 @@
         </div>
         <div class="row p-4 mx-0"
              style="background: rgba(256, 256, 256, .05); text-align: center; justify-content: center;">
-            <p class="m-0 text-white text-center">Copyright &copy; 2023 <a class="font-weight-bold footer__copy"
-                                                                           href="#">Todos
-                    os
-                    direitos reservados. </a>Tecnologia e Desenvolvimento Agência Connecta </p>
+            <span class="m-0 text-white text-center">
+                Copyright &copy; 2023 Todos os direitos reservados. Tecnologia e desenvolvimento <a
+                    href="https://instagram.com/agenciaconnecta?igshid=MzRlODBiNWFlZA==" class="text-white" style="text-decoration: underline; font-weight: bold;">Agência Connecta</a> </span>
         </div>
     </div>
 
